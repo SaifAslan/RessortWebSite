@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const _ = require('lodash');
 const ejs = require("ejs");
-const .env = require('dotenv');
+const env = require('dotenv');
 
 const app =express();
 
@@ -62,7 +62,11 @@ app.get("/arPlans",function(req,res){
   res.render("plansAR.ejs")
 });
 
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
 
-app.listen("3000", function(){
-  console.log("server is on port 3000");
+app.listen(port, function() {
+  console.log("the server is up");
 });
