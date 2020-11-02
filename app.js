@@ -60,7 +60,8 @@ app.get("/arSocial",function(req,res){
 });
 
 app.get("/arPlans",function(req,res){
-  res.render(__dirname+"/views/plansAr.ejs")
+  res.sendFile(__dirname+"/test.html")
+  // res.render(__dirname+"/views/plansAr.ejs")
 });
 
 let port = process.env.PORT;
