@@ -21,46 +21,46 @@ app.get("/", function(req,res){
 });
 
 app.get("/contactUs",function(req,res){
-  res.render("contactUs.ejs")
+  res.render(__dirname+"/views/contactUs.ejs")
 });
 
 app.get("/aboutUs",function(req,res){
-  res.render("aboutUs.ejs")
+  res.render(__dirname+"/views/aboutUs.ejs")
 });
 app.get("/gallery", function(req,res){
   res.render(__dirname+"/views/gallery.ejs")
 });
 
 app.get("/social",function(req,res){
-  res.render("social.ejs")
+  res.render(__dirname+"/views/social.ejs")
 });
 
 app.get("/plans",function(req,res){
-  res.render("plans.ejs")
+  res.render(__dirname+"/views/plans.ejs")
 });
 
 //Arabic Routs
 app.get("/ar", function(req,res){
-  res.render("homeAR.ejs")
+  res.render(__dirname+"/views/homeAR.ejs")
 });
 
 app.get("/arContactUs",function(req,res){
-  res.render("contactUsAR.ejs")
+  res.render(__dirname+"/views/contactUsAR.ejs")
 });
 
 app.get("/arAboutUs",function(req,res){
-  res.render("aboutUsAR.ejs")
+  res.render(__dirname+"/views/aboutUsAR.ejs")
 });
 app.get("/arGallery", function(req,res){
-  res.render("galleryAR.ejs")
+  res.render(__dirname+"/views/galleryAR.ejs")
 });
 
 app.get("/arSocial",function(req,res){
-  res.render("socialAR.ejs")
+  res.render(__dirname+"/views/socialAR.ejs")
 });
 
 app.get("/arPlans",function(req,res){
-  res.render("plansAR.ejs")
+  res.render(__dirname+"/views/plansAR.ejs")
 });
 
 let port = process.env.PORT;
