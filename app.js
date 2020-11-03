@@ -60,7 +60,7 @@ app.get("/arSocial",function(req,res){
 });
 
 app.get("/arPlans",function(req,res){
-  res.sendFile(__dirname+"/test.html")
+  res.sendFile(__dirname+"/plansAr.html")
   // res.render(__dirname+"/views/plansAr.ejs")
 });
 
