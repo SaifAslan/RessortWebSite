@@ -21,22 +21,22 @@ app.get("/", function(req,res){
 });
 
 app.get("/contactUs",function(req,res){
-  res.render(__dirname+"/views/contactUs.ejs")
+  res.sendFile(__dirname+"/contactUs.html")
 });
 
 app.get("/aboutUs",function(req,res){
-  res.render(__dirname+"/views/aboutUs.ejs")
+  res.sendFile(__dirname+"/aboutUs.html")
 });
 app.get("/gallery", function(req,res){
-  res.render(__dirname+"/views/gallery.ejs")
+  res.sendFile(__dirname+"/gallery.html")
 });
 
 app.get("/social",function(req,res){
-  res.render(__dirname+"/views/social.ejs")
+  res.sendFile(__dirname+"/social.html")
 });
 
 app.get("/plans",function(req,res){
-  res.render(__dirname+"/views/plans.ejs")
+  res.sendFile(__dirname+"/views/plans.html")
 });
 
 //Arabic Routs
