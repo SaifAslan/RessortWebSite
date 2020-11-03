@@ -17,7 +17,7 @@ app.use(express.static(__dirname + '/public'));
 
 //English Routs
 app.get("/", function(req,res){
-  res.render(__dirname+"/views/home.ejs")
+  res.sendFile(__dirname+"/home.html")
 });
 
 app.get("/contactUs",function(req,res){
@@ -41,22 +41,22 @@ app.get("/plans",function(req,res){
 
 //Arabic Routs
 app.get("/ar", function(req,res){
-  res.render(__dirname+"/views/homeAR.ejs")
+  res.sendFile(__dirname+"/homeAR.html")
 });
 
 app.get("/arContactUs",function(req,res){
-  res.render(__dirname+"/views/contactUsAR.ejs")
+  res.sendFile(__dirname+"/contactUsAR.html")
 });
 
 app.get("/arAboutUs",function(req,res){
-  res.render(__dirname+"/views/aboutUsAR.ejs")
+  res.sendFile(__dirname+"/aboutUsAR.html")
 });
 app.get("/arGallery", function(req,res){
-  res.render(__dirname+"/views/galleryAR.ejs")
+  res.sendFile(__dirname+"/galleryAR.html")
 });
 
 app.get("/arSocial",function(req,res){
-  res.render(__dirname+"/views/socialAR.ejs")
+  res.sendFile(__dirname+"/socialAR.html")
 });
 
 app.get("/arPlans",function(req,res){
